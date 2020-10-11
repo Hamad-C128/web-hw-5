@@ -95,7 +95,7 @@
   }  
   @media  (max-width : 480px){
     .input-group {
-        width: 150px;
+        width: 360px;
     }
 }
 
