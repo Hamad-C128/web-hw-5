@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="./logoto.jpg" />
+    <link rel="stylesheet" href="./css.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to do</title>
+    <style>
+        
+        </style>
+        </head>
+        <body>
+             
+            <h1><span class="blue">&lt;</span>to do<span class="blue">&gt;</span> <span class="yellow">Set your priorities</pan></h1>
+                <h2> The site will be developed better in the future<a href="https://twitter.com/alshamari__29" target="_blank">Hamad Alshammari</a></h2>
+                
+                <table class="container">
+                    <thead>
+                        <tr>
+                            <th><h1>Weeks</h1></th>
+                            <th><h1>Mission</h1></th>
+                            <th><h1>the remaining time</h1></th>
+                            <th><h1>Importance</h1></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>this week</td>
+                            <td ><h3 id="task">-</h3> <button class="deleteButton">-</button></td>
+                            <td id="first"></td>
+                            <td>Very important</td>
+                        </tr>
+                        <tr>
+                            <td>next week</td>
+                            <td><h3 id="task2">-</h3> <button class="deleteButton">-</button></td>
+                            <td id="scon"></td>
+                            <td>Important</td>
+                        </tr>
+                        <tr>
+                            <td>the third week</td>
+                            <td><h3 id="task3">-</h3> <button class="deleteButton">-</button></td>
+                            <td id="ther"></td>
+                            <td>Little important</td>
+                        </tr>
+                    <tr>
+                            <td>the fourth</td>
+                            <td><h3 id="task4">-</h3> <button class="deleteButton">-</button></td>
+                            <td id="fur"></td>
+                            <td>Not important</td>
+                        </tr>
+                    
+                    </tbody>
+                </table>
+
+                    <script>
+                       
+                        function countdownTimer() {
+                         const difference = +new Date("2020-10-17") - +new Date();
+                        let remaining = "Time's up!";
+
+                     if (difference > 0) {
+                      const parts = {
+                            d : Math.floor(difference / (1000 * 60 * 60 * 24)),
+                            h : Math.floor((difference / (1000 * 60 * 60)) % 24),
+                             m : Math.floor((difference / 1000 / 60) % 60),
+                             s : Math.floor((difference / 1000) % 60)
+                          };
+
+                       remaining = Object.keys(parts)
+                              .map(part => {
+                                   if (!parts[part]) return;
+                                   return `${parts[part]} ${part}`;
+                               })
+                         .join(" ");
+                              }
+
+                              document.getElementById(`first`).innerHTML = remaining;
+                       }
+
+                     countdownTimer();
+                    setInterval(countdownTimer, 1000);
+
+                    // 
+                    function countdownTimer2() {
+                         const difference = +new Date("2020-10-24") - +new Date();
+                        let remaining = "Time's up!";
+
+                     if (difference > 0) {
+                      const parts = {
+                            d: Math.floor(difference / (1000 * 60 * 60 * 24)),
+                            h: Math.floor((difference / (1000 * 60 * 60)) % 24),
+                             m: Math.floor((difference / 1000 / 60) % 60),
+                             s: Math.floor((difference / 1000) % 60)
+                          };
+
+                       remaining = Object.keys(parts)
+                              .map(part => {
+                                   if (!parts[part]) return;
+                                   return `${parts[part]} ${part}`;
+                               })
+                         .join(" ");
+                              }
+
+                              document.getElementById(`scon`).innerHTML = remaining;
+                       }
+
+                     countdownTimer2();
+                    setInterval(countdownTimer2, 1000);
+
+                    // 
+                    function countdownTimer3() {
+                         const difference = +new Date("2020-10-31") - +new Date();
+                        let remaining = "Time's up!";
+
+                     if (difference > 0) {
+                      const parts = {
+                            d : Math.floor(difference / (1000 * 60 * 60 * 24)),
+                            h : Math.floor((difference / (1000 * 60 * 60)) % 24),
+                             m : Math.floor((difference / 1000 / 60) % 60),
+                             s : Math.floor((difference / 1000) % 60)
+                          };
+
+                       remaining = Object.keys(parts)
+                              .map(part => {
+                                   if (!parts[part]) return;
+                                   return `${parts[part]} ${part}`;
+                               })
+                         .join(" ");
+                              }
+
+                              document.getElementById(`ther`).innerHTML = remaining;
+                       }
+
+                     countdownTimer3();
+                    setInterval(countdownTimer3, 1000);
+
+                    // 
+                    function countdownTimer4() {
+                         const difference = +new Date("2020-11-7") - +new Date();
+                        let remaining = "Time's up!";
+
+                     if (difference > 0) {
+                      const parts = {
+                            d : Math.floor(difference / (1000 * 60 * 60 * 24)),
+                            h : Math.floor((difference / (1000 * 60 * 60)) % 24),
+                             m  : Math.floor((difference / 1000 / 60) % 60),
+                             s : Math.floor((difference / 1000) % 60)
+                          };
+
+                       remaining = Object.keys(parts)
+                              .map(part => {
+                                   if (!parts[part]) return;
+                                   return `${parts[part]} ${part}`;
+                               })
+                         .join(" ");
+                              }
+
+                              document.getElementById(`fur`).innerHTML = remaining;
+                       }
+
+                     countdownTimer4();
+                    setInterval(countdownTimer4, 1000);
+                    </script>  
+                                          
+                                          <div class="rb-box">
+                                        <div id="rb-1" class="rb">
+                                            <input id="myCheck" class="stboutn" type="radio" name="radio"> 1
+                                            <input id="myCheck2" class="stboutn" type="radio" name="radio"> 2
+                                            <input id="myCheck3" class="stboutn" type="radio" name="radio"> 3
+                                            <input id="myCheck4" class="stboutn" type="radio" name="radio"> 4
+                                        </div>
+                                      </div>
+                       <!-- 
+                        -->
+            <div class="input-group">
+                <label for="input" id="label">Task</label>
+                <input  type="" id="input" name="input" class="input" >
+              </div>
+              <button onclick="clearFields()" id="buttonz" class="button" style="vertical-align:middle"><span>Send</span></button>
+        <script>
+             
+          let text = document.getElementById("task");
+          let text2 = document.getElementById("task2");
+          let text3 = document.getElementById("task3");
+          let text4 = document.getElementById("task4");
+          var checkBox = document.getElementById("myCheck");
+          var checkBox2 = document.getElementById("myCheck2");
+          var checkBox3 = document.getElementById("myCheck3");
+          var checkBox4 = document.getElementById("myCheck4");
+        function clearFields() {
+            
+            if (checkBox.checked == true){
+                let info =  document.getElementById("input").value
+                text.innerHTML = info;
+                 
+               }else  if (checkBox2.checked == true){
+                let info2 =  document.getElementById("input").value
+                text2.innerHTML = info2;
+                
+               }else  if (checkBox3.checked == true){
+                let info3 =  document.getElementById("input").value
+                text3.innerHTML = info3;
+                
+               }else  if (checkBox4.checked == true){
+                let info4 =  document.getElementById("input").value
+                text4.innerHTML = info4;
+                
+               }
+           document.getElementById('input').value = '';
+           }
+        </script>
+        <script>
+              document.querySelector('.deleteButton').addEventListener('click', () => {
+                  text.innerHTML = '';
+                  text2.innerHTML = '';
+                  text3.innerHTML = '';
+                  text4.innerHTML = '';
+              })
+        </script>
+        <br><br><br><br>
+</body>
+</html>
